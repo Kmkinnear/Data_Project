@@ -1,3 +1,4 @@
+nfl_stadiums
 stadium_name,stadium_location,stadium_open,stadium_close,stadium_type,stadium_address,stadium_weather_station_code,stadium_weather_type,stadium_capacity,stadium_surface,STATION,NAME,LATITUDE,LONGITUDE,ELEVATION
 Acrisure Stadium,"Pittsburgh, PA",2001,,outdoor,"100 Art Rooney Ave, Pittsburgh, PA 15212",15212,cold,"65,500",Grass,USW00094823,"PITTSBURGH ASOS, PA US",40.4846,-80.2144,366.7
 Alamo Dome,"San Antonio, TX",,,indoor,"100 Montana St, San Antonio, TX 78203",78203,dome,72000,FieldTurf,,,,,
@@ -23,7 +24,7 @@ Cowboys Stadium,"Arlington, TX",2009,,retractable,"1 AT&T Way, Arlington, TX 760
 Dolphin Stadium,"Miami, FL",,,,,,,,,,,,,
 Edward Jones Dome,"St. Louis, MO",1995,,indoor,"901 N Broadway, St. Louis, MO 63101",63101,dome,,,,,,,
 Empower Field at Mile High,"Denver, CO",2001,,outdoor,"1701 Bryant St, Denver, CO 80204",80204,cold,"76,125",Grass,USW00023062,"DENVER STAPLETON, CO US",39.7633,-104.8694,1611.2
-Estadio Azteca,"Mexico City, Mexico",1966,,outdoor,"Calz. de Tlalpan 3465, Sta. ê_rsula Coapa, Coyoac_†çn, 04650 Ciudad de MÅ_xico, D.F., Mexico","Mexico City, MX",warm,,,,,,,
+Estadio Azteca,"Mexico City, Mexico",1966,,outdoor,"Calz. de Tlalpan 3465, Sta. ÔøΩ_rsula Coapa, Coyoac_¬†ÔøΩn, 04650 Ciudad de MÔøΩ_xico, D.F., Mexico","Mexico City, MX",warm,,,,,,,
 EverBank Field,"Jacksonville, FL",1995,,outdoor,"1 Everbank Field Dr, Jacksonville, FL 32202",32202,warm,"67,264",Grass,USW00093837,"JACKSONVILLE NAS, FL US",30.23333,-81.66667,6.1
 FedEx Field,"Landover, MD",1997,2016,outdoor,"1600 Fedex Way, Hyattsville, MD 20785",20785,moderate,"79,000",Grass,USC00186350,"NATIONAL ARBORETUM DC, MD US",38.9133,-76.97,15.2
 Fenway Park,,,,,,,,,,,,,,

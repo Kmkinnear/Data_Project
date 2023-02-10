@@ -4,6 +4,9 @@
 
 The overview of our project was to see if we could determine the passengers that survived from the night the Titanic sank by way of machine learning.  We found this dataset on Kaggle that was part of a challenge for the public to compete in. We downloaded and used their training dataset file to create our machine learning model. The original training dataset had eight features and one target variable that we would use to manipulate our data. We will create dataframes using Pandas in Jupyter Notebook are cleaning up our data. We'll then be creating different models to see how accuracy changes betweeen them and see if we can find sizeable improvements between them.
 
+Data Source: https://www.kaggle.com/competitions/titanic 
+Tableau Dashboard: https://public.tableau.com/app/profile/guy6801/viz/Book2_16759938012560/Sheet1?publish=yes
+
 ## Results
 
 ### Random Forest Classifier Model

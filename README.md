@@ -48,3 +48,8 @@ For our last model we decided to use KerasTuner to see if we would see any big i
 ## Summary
 
 Our models above did a pretty good job of predicting survivors based off the features that we provided. We saw accuracy scores around 80% for all of our models. We were surprised to see that our second and third neural network models performed in line with our Keras optimizer model.
+
+
+Tablleau Survival rate Analysis: [Tableau Analysis Link](https://public.tableau.com/app/profile/guy6801/viz/TitanicProject_16762110932600/TitanicProjectDashboard?publish=yes)
+
+![survival rate Analysis](./Tableau.png)

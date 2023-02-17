@@ -6,7 +6,6 @@ The overview of our project was to see if we could determine the passengers that
 
 Data Source: https://www.kaggle.com/competitions/titanic 
 
-Tableau Dashboard: https://public.tableau.com/app/profile/guy6801/viz/Book2_16759938012560/Sheet1?publish=yes
 
 ## Results
 

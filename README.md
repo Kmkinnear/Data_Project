@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The purpose of our project was to use Machine Learning to build a predictive model that accurately predicts whether a passenger survived or died during the sinking of the Titanic. The original dataset had eleven features and one target variable that we would use to manipulate our data. We will create dataframes using Pandas in Jupyter Notebook that we will assist us in cleaning up and analyzing our data. We will experiment with different models and ultimately decide on one model that we are happy with.
+The purpose of our project was to use Machine Learning to build a predictive model that accurately predicts whether a passenger survived or died during the sinking of the Titanic. The original dataset had eleven features and one target variable that we used to manipulate our data. We will use Pandas in Jupyter Notebook to create dataframes that we will assist us in cleaning up and analyzing our data. We will experiment with different predictive models and ultimately decide on one model that we are happy with.
 
 ## Analysis
 

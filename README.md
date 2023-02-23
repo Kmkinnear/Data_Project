@@ -1,50 +1,52 @@
 # Titanic Data Project
 
-## Overview
+## Purpose
 
-The overview of our project was to see if we could determine the passengers that survived from the night the Titanic sank by way of machine learning.  We found this dataset on Kaggle that was part of a challenge for the public to compete in. We downloaded and used their training dataset file to create our machine learning model. The original training dataset had eight features and one target variable that we would use to manipulate our data. We will create dataframes using Pandas in Jupyter Notebook are cleaning up our data. We'll then be creating different models to see how accuracy changes betweeen them and see if we can find sizeable improvements between them.
+The purpose of our project was to use Machine Learning to build a predictive model that accurately predicts whether a passenger survived or died during the sinking of the Titanic. The original dataset had eleven features and one target variable that we would use to manipulate our data. We will create dataframes using Pandas in Jupyter Notebook that we will assist us in cleaning up and analyzing our data. We will experiment with different models and ultimately decide on one model that we are happy with.
 
-Data Source: https://www.kaggle.com/competitions/titanic 
+## Analysis
 
-Tableau Dashboard: https://public.tableau.com/app/profile/guy6801/viz/TitanicProject_16762110932600/TitanicProjectDashboard
+### Decision Tree Classifier
+
+We ended up going with using a Decision Tree model for our analysis in this project. We really like how we could see how the model worked its way through features and predicting the outcomes. We can see in the model that the colors range from shades of blue to shades of orange. For the purposes of this model, the blue portions represent those more likely to survive and the orange represents those that are likely non-survivors. We can see that there is a heavy concentration of predicted survivors to the left side of the tree with a mix of predicted survivors on the right side of the tree which is comprised mostly of predicted non-survivors. We can zoom in and see how the model split at each layer and see which features the model viewed as being more important.
+
+![image](https://user-images.githubusercontent.com/110848660/220732551-5779afc8-ebf3-4a9e-8030-1b39229052ca.png)
+
+This model is a little overwhelming to begin with so to make it easier to work with, we included a parameter to set the maximum number of layers to three. This allowed for an easier model to visualize and present. It's also easy to see how each level was split and was feature it was split off of. In the model below, we can see that the features were ranked in importance from Male (Gender), Pclass, Family, and Age. We see that by using a 3-layered model, a significant determinant of survival was whether the passenger was male or female.  
+
+![image](https://user-images.githubusercontent.com/110848660/220732631-8859cbff-ce61-406e-9fe3-0a3273df3330.png)
+
+![image](https://user-images.githubusercontent.com/110848660/220737729-ada2568c-1325-442f-ae44-28f03efc7469.png)
 
 ## Results
 
-### Random Forest Classifier Model
+### Confusion Matrix
 
-![image](https://user-images.githubusercontent.com/110848660/217948649-53710a5c-0cc0-440f-960b-e8cc7cf32e34.png)
+![image](https://user-images.githubusercontent.com/110848660/220732762-a9126904-46a3-4640-ac95-002d5476d8aa.png)
 
-We can see in the picture above that we were able to get a Testing Score of 79.4% with this model. We also ranked our features in order of importance and can see that Fare, Age, and Gender were the most important determinants in survival
+- True Negatives (Predicted Died, Died) – 167 Passengers
+- False Positives (Predicted Survived, Died) – 47 Passengers
+- False Negatives (Predicted died, Survived) – 48 Passengers
+- True Positives (Predicted Survived, Survived) – 70 Passengers
 
-### Neural Network Model #1
+### Classification Report
 
-![image](https://user-images.githubusercontent.com/110848660/217949089-cbe92fed-6496-4436-9f4c-87e65c63a4ac.png)
-![image](https://user-images.githubusercontent.com/110848660/217950867-e1c26bba-51a7-424b-b9b7-241d1ea197d4.png)
+![image](https://user-images.githubusercontent.com/110848660/220732798-57852669-7c4b-40c4-9f36-5fe83532803a.png)
 
+We can see that our model did well overall. We were able to attain an accuracy score of 76%. This was in line with all the other models that we experimented with, which was good to see. We can see that our precision scores were very similar with 76% and 74%. However, our model did not do as well with the recall scores. We can see that our model only scored at 61% with being able to accurately predict actual survivals. This compared to a score of 86% at being able to accurately predict actual deaths.
 
-We were able to attain an accuracy score of 82.1% in our first neural network model. This was a three layer neural network model that we ran with 50 ephocs
-
-### Neural Network Model #2
-
-![image](https://user-images.githubusercontent.com/110848660/217951330-5899d08a-404e-4d2b-bf5b-6821646b359e.png)
-![image](https://user-images.githubusercontent.com/110848660/217951409-288cc858-2642-44a7-8e3f-5b1a58003502.png)
-
-We were able to attain an accuracy score of 84.3% in our second neural network model. This was another three layer neural network model that we ran with 50 ephocs
-
-### Neural Network Model #3 
-
-![image](https://user-images.githubusercontent.com/110848660/217951644-c4ddfe55-78de-4de2-9112-8c686bf6b451.png)
-![image](https://user-images.githubusercontent.com/110848660/217951701-c4a77f2f-49a9-4629-9c88-68533ab39977.png)
-
-We were able to attain an accuracy score of 80.7% in our third neural network model. In this model, we addid a third hidden layer to bump to total layer number to four. We ran this model with 50 epochs.
-
-### Keras Model
-
-![image](https://user-images.githubusercontent.com/110848660/217952231-6b4c8ca2-2cc4-4c8e-99aa-393826739410.png)
-![image](https://user-images.githubusercontent.com/110848660/217952292-5a5a425e-7fac-4482-affb-6f74cb8cf64d.png)
-
-For our last model we decided to use KerasTuner to see if we would see any big improvements. We pulled the top three models and listed their results above. We can see that their accuracy ranged from 81-85% with loss values between 0.39 and 0.48.
+Tableau Visualization Dashboard: https://public.tableau.com/app/profile/guy6801/viz/TitanicProject_16762110932600/TitanicProjectDashboard
 
 ## Summary
 
-Our models above did a pretty good job of predicting survivors based off the features that we provided. We saw accuracy scores around 80% for all of our models. We were surprised to see that our second and third neural network models performed in line with our Keras optimizer model.
+We believe our model did a sufficient job at predicting survivors and non-survivors with the dataset and features that we gave it. As we mentioned above, our model was able to achieve an accuracy score of 76%. 
+
+There are numerous ways that we can further test the data to see if we can achieve better results with the model. One thing would be to change the size of our training and testing group size. The only concern there is to make sure we have enough training data and that we also don't overfit our model. We could also explore additional predictive learning models to see if there is one out there that performs any better than the ones we previously tested. We also ran our model with 4 features (Gender, Pclass, Family, and Age) out of the 11 that were initially provided in the data. We could experiment with adding more features or remove some of the ones we worked with to see how it affects the performance of the model.
+
+Technologies Used:
+- Jupyter Notebook (Pandas, Sklearn, Various Visualization Packages)
+- Python
+- Tableau
+- PowerPoint
+
+Data Source: https://www.kaggle.com/competitions/titanic
